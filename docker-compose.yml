@@ -1,0 +1,23 @@
+version: "3.6"
+
+services:
+  rust-template:
+    image: rust-template:0.0.1
+    container_name: rust-template
+    build:
+      context: ./docker/rust/image
+      dockerfile: Dockerfile
+      args:
+        - RUST_VERSION=1.63.0
+        - RUST_UID=${UID:-1000}
+        - RUST_GID=${GID:-1000}
+        - RUST_USERNAME=rust_template_user
+        - RUST_GROUPNAME=rust_template_user
+        - RUST_PASSWORD=rust_template_user
+    networks:
+      - rust-template-network
+
+networks:
+  rust-template-network:
+    name: rust-template-network
+    driver: bridge

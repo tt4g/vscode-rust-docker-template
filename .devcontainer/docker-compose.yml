@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+  rust-template:
+    volumes:
+      - .:/workspace:cached
+    tty: true

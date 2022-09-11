@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "bungcip.better-toml",
+        "ryu1kn.partial-diff",
+        "mosapride.zenkaku",
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "serayuzgur.crates"
+    ]
+}

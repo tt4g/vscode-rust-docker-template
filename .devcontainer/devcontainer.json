@@ -1,0 +1,16 @@
+{
+    "name": "Existing Docker Compose (Extend)",
+    "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+    "service": "rust-template",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "rust_template_user",
+    "extensions": [
+        "editorconfig.editorconfig",
+        "bungcip.better-toml",
+        "ryu1kn.partial-diff",
+        "mosapride.zenkaku",
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "serayuzgur.crates"
+    ]
+}
